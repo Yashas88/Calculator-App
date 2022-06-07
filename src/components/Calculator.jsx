@@ -232,7 +232,7 @@ const Calculator = () => {
                       className='btn btn-light text-primary shadow
                                        p-4 fs-4'
                       value='-'
-                      onClick={() => calculate()}
+                      onClick={(e) => setVal(val + e.target.value)}
                     >
                       {' '}
                       -{' '}
